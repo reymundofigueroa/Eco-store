@@ -8,7 +8,9 @@ body {
 nav {
   width: auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   color: #7C6A0A;
   padding: 15px;
 }
@@ -32,11 +34,15 @@ article {
   padding-right: 45px;
   padding-top: 70px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 article .impact-section {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
   gap: 25px;
   padding-top: 50px;
 }
@@ -49,10 +55,13 @@ article p {
   font-size: 1.5em;
 }
 article button {
+  background: none;
+  border-style: none;
+}
+article button {
   width: 12vw;
   padding: 20px;
   background-color: #FA9500;
-  border-style: none;
   border-radius: 35px;
   color: white;
   font-size: 1em;
@@ -80,11 +89,12 @@ section .healtcare h2, section .forniture h2 {
 }
 section .healtcare .card-section, section .forniture .card-section {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   width: auto;
   height: auto;
-  justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
   -moz-column-gap: 200px;
        column-gap: 200px;
   row-gap: 80px;
